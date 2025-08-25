@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+*.egg
+.Python
+.venv/
+myenv/
+venv/
+env/
+ENV/
+
+# Logs
+*.log
+logs/
+*.out
+*.err
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+*.pid
+*.seed
+*.tar
+*.gz
+*.zip
+*.bak
+
+# Local dev data
+data/
+tmp/
+cache/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Grafana / Prometheus / Loki local state
+grafana/data/
+prometheus/data/
+loki/data/
+tempo/data/
