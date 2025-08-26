@@ -12,7 +12,7 @@ REQUEST_LATENCY = Histogram("request_latency_seconds", "Request latency", ["endp
 @app.get("/hello")
 def hello():
     start = time.time()
-    time.sleep(random.uniform(0.1, 0.5))  # simulate latency
+    time.sleep(random.uniform(0.1, 0.5))  
     REQUEST_COUNT.labels(method="GET", endpoint="/hello").inc()
     REQUEST_LATENCY.labels(endpoint="/hello").observe(time.time() - start)
     return {"message": "Hello, world!"}
